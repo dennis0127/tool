@@ -9,7 +9,6 @@ import java.io.IOException;
 
 public class ListLinks {
     public static void main(String[] args) throws IOException {
-//        Validate.isTrue(args.length == 1, "usage: supply url to fetch");
         String url = "http://www.huobiao.cn";
         print("Fetching %s...", url);
 
