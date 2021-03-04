@@ -12,6 +12,7 @@ public class ListLinks {
         String url = "http://www.huobiao.cn";
         print("Fetching %s...", url);
 
+
         Document doc = Jsoup.connect(url).get();
         Elements links = doc.select("a[href]");
         Elements media = doc.select("[src]");
