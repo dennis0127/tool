@@ -1,2 +1,16 @@
 server:
   port: 9527
+
+  thymeleaf:
+    #    prefix: file:/home/java/templates/
+    prefix: classpath:/templates/
+    suffix: .html
+    mode: HTML
+    encoding: utf-8
+    servlet:
+      content-type: text/html
+    cache: false
+  servlet:
+    multipart:
+      max-file-size: 5MB
+      max-request-size: 16MB
