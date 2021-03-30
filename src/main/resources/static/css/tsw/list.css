@@ -22,7 +22,10 @@ body {
 .content .tswList {
     width: 50%;
     height: 20%;
-    border-color: aqua;
+}
+.content .tswDividingLine{
+    display: block;
+    border: 1px palegreen;
 }
 .footer{
     width: 100%;
