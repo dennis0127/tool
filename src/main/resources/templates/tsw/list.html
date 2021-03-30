@@ -2,22 +2,33 @@
 <html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
-    <title>list</title>
+    <title>狗子tsy看号</title>
     <link rel="stylesheet" href="/css/tsw/list.css">
 </head>
 <body>
-    <footer class="header">1</footer>
-    <comment class="comment">
-        <div class="tswList">
-            <dt>
-                <dd>1</dd>
-                <dd>2</dd>
-                <dd>3</dd>
-                <dd>4</dd>
-                <dd>5/dd>
-            </dt>
+    <div class="header">
+        <p>
+            狗子tsy看号
+        </p>
+    </div>
+    <div class="content">
+        <div class="tswList" th:each="tsw: ${tsws}" >
+            <p th:text="${tsw.name}">name</p>
+            <p th:text="'描述: '+${tsw.brightSpot}">描述</p>
+            <p th:text="'更新时间: '+${tsw.lastActiveDate}">更新时间</p>
+            <p th:text="'区名: '+${tsw.areaName}">areaName</p>
+            <p th:text="'手机端: '+${tsw.clintName}">clintName</p>
         </div>
-    </comment>
-    <footer class="footer">3</footer>
+        <br>
+        <p>-----------------------------</p>
+    </div>
+    <div class="footer">
+        <p>
+            版权所有：狗子科技信息有限公司
+        </p>
+        <p>
+            备案号：<a href="http://beian.miit.gov.cn" target="_blank" rel="nofollow">苏ICP备7788号</a>
+        </p>
+    </div>
 </body>
 </html>
