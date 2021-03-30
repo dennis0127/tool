@@ -22,6 +22,7 @@ body {
 .content .tswList {
     width: 50%;
     height: 20%;
+    border-color: aqua;
 }
 .footer{
     width: 100%;

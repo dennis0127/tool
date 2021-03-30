@@ -13,14 +13,25 @@
     </div>
     <div class="content">
         <div class="tswList" th:each="tsw: ${tsws}" >
-            <p th:text="${tsw.name}">name</p>
-            <p th:text="'描述: '+${tsw.brightSpot}">描述</p>
-            <p th:text="'更新时间: '+${tsw.lastActiveDate}">更新时间</p>
-            <p th:text="'区名: '+${tsw.areaName}">areaName</p>
-            <p th:text="'手机端: '+${tsw.clintName}">clintName</p>
+            <dl>
+                <dt>标题:</dt>
+                <dd th:text="''+${tsw.name}">name</dd>
+
+                <dt>描述:</dt>
+                <dd th:text="''+${tsw.brightSpot}">描述</dd>
+
+                <dt>更新时间:</dt>
+                <dd th:text="''+${tsw.lastActiveDate}">更新时间</dd>
+
+                <dt>区名:</dt>
+                <dd th:text="''+${tsw.areaName}">areaName</dd>
+
+                <dt>手机端:</dt>
+                <dd th:text="''+${tsw.clintName}">clintName</dd>
+
+            </dl>
         </div>
-        <br>
-        <p>-----------------------------</p>
+
     </div>
     <div class="footer">
         <p>
